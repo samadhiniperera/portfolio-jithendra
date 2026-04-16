@@ -1,0 +1,5 @@
+Rear Paddock Stand Design and Development for the Vega Street Bike
+
+Description
+
+This project involved the design and development of a rear paddock stand to support the Vega Street Bike during maintenance and servicing operations. The objective was to create a stable lifting mechanism that safely elevates the rear wheel while maintaining adequate structural rigidity. The design process included concept development, CAD modeling, and structural validation using Finite Element Analysis (FEA) in SolidWorks Simulation to evaluate stress distribution and deformation under load conditions. The final stand was fabricated and tested with the motorcycle to verify stability, usability, and compatibility with the bike frame.

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluid Dynamics Projects | Jithendra Pathiraja</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">&lt;JP/&gt;</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home" class="nav-link">Home</a></li>
+      <li><a href="index.html#about" class="nav-link">About</a></li>
+      <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-link dropdown-toggle active">Projects <i class="fa fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="design-manufacturing.html"><i class="fa fa-cogs"></i> Design &amp; Manufacturing</a></li>
+          <li><a href="fluid-dynamics.html"><i class="fa fa-water"></i> Fluid Dynamics</a></li>
+          <li><a href="mechanical-simulations.html"><i class="fa fa-chart-line"></i> Mechanical Simulations</a></li>
+          <li><a href="academic-projects.html"><i class="fa fa-graduation-cap"></i> Academic Projects</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="section-tag">FLUID DYNAMICS</div>
+  <h2 class="section-title">Fluid Dynamics Projects</h2>
+  <p class="section-subtitle">CFD, Hydrodynamics, Aerofoil Analysis — investigating real-world flow behaviour</p>
+</div>
+
+<section class="projects-section" id="fluid-dynamics">
+  <div class="section-container">
+
+    <!-- PROJECT 1: FYP Hydrodynamic Tunnel — SAMPLE (ongoing) -->
+    <div class="project-card">
+      <div class="project-media">
+        <div class="project-slideshow" data-project="fd1">
+          <!-- REPLACE: Add your actual FYP images as images/projects/fluid-p1/1.jpg, 2.jpg, etc. -->
+          <div class="proj-slide active" style="display:flex;align-items:center;justify-content:center;background:var(--card2);color:var(--text-muted);text-align:center;padding:20px;width:100%;height:100%;position:absolute;inset:0;">
+            <div><i class="fas fa-flask" style="font-size:2.5rem;margin-bottom:12px;color:var(--blue);display:block;"></i><strong>FYP — Ongoing Research</strong><br/><small>Photos and results will be added<br/>as the project progresses.<br/>Add images to images/projects/fluid-p1/</small></div>
+          </div>
+          <div class="proj-slide-controls">
+            <button class="proj-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="proj-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="proj-dots"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Hydrodynamic Tunnel — Final Year Project (Ongoing)</h3>
+        <div class="project-tags">
+          <span>FYP</span><span>Hydrodynamics</span><span>CFD</span><span>Tunnel Design</span><span>Ongoing</span>
+        </div>
+        <p>This is my Final Year Project (FYP) involving the design, analysis and development of a hydrodynamic tunnel facility. The project covers the full engineering process from concept design and hydrodynamic modelling through to structural analysis and construction feasibility. CFD analysis is being conducted to characterise flow behaviour within the tunnel test section and optimise the design for uniform, low-turbulence flow.</p>
+        <ul class="project-highlights">
+          <li><i class="fas fa-check-circle"></i> Full hydrodynamic tunnel design and analysis</li>
+          <li><i class="fas fa-check-circle"></i> CFD flow characterisation of test section</li>
+          <li><i class="fas fa-check-circle"></i> Structural design and feasibility study</li>
+          <li><i class="fas fa-spinner fa-spin" style="color:var(--blue);"></i> Project currently in progress — results to be added</li>
+        </ul>
+        <div class="project-buttons">
+          <a href="https://www.linkedin.com/in/jithendra-pathiraja" target="_blank" class="btn btn-primary">
+            <i class="fab fa-linkedin"></i> View on LinkedIn
+          </a>
+          <a href="reports/hydrodynamic-tunnel-report.pdf" target="_blank" class="btn btn-outline">
+            <i class="fas fa-file-pdf"></i> Report
+          </a>
+          <a href="mailto:jithendrapathiraja3434@gmail.com?subject=Inquiry about Hydrodynamic Tunnel FYP" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+        </div>
+        <!-- GUIDE: Add photos to images/projects/fluid-p1/ when ready -->
+        <!-- GUIDE: Add report as reports/hydrodynamic-tunnel-report.pdf when ready -->
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Aerofoil Simulations — SAMPLE -->
+    <div class="project-card reverse">
+      <div class="project-media">
+        <div class="project-slideshow" data-project="fd2">
+          <!-- REPLACE: Add aerofoil simulation images as images/projects/fluid-p2/1.jpg, 2.jpg, etc. -->
+          <div class="proj-slide active" style="display:flex;align-items:center;justify-content:center;background:var(--card2);color:var(--text-muted);text-align:center;padding:20px;width:100%;height:100%;position:absolute;inset:0;">
+            <div><i class="fas fa-wind" style="font-size:2.5rem;margin-bottom:12px;color:var(--blue);display:block;"></i><strong>Photos Coming Soon</strong><br/><small>Replace with actual simulation images<br/>in images/projects/fluid-p2/</small></div>
+          </div>
+          <div class="proj-slide-controls">
+            <button class="proj-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="proj-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="proj-dots"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Aerofoil CFD Simulations</h3>
+        <div class="project-tags">
+          <span>CFD</span><span>Aerofoil</span><span>ANSYS Fluent</span><span>Aerodynamics</span>
+        </div>
+        <p>Conducted computational fluid dynamics (CFD) simulations to analyse the aerodynamic performance of aerofoil sections. The study involved meshing of aerofoil geometries, application of boundary conditions, and analysis of lift and drag coefficients at varying angles of attack. Results were compared against theoretical and published experimental data to validate the simulation methodology.</p>
+        <ul class="project-highlights">
+          <li><i class="fas fa-check-circle"></i> CFD simulation of aerofoil geometries</li>
+          <li><i class="fas fa-check-circle"></i> Lift and drag coefficient analysis vs angle of attack</li>
+          <li><i class="fas fa-check-circle"></i> Validation against theoretical and experimental results</li>
+        </ul>
+        <div class="project-buttons">
+          <a href="https://www.linkedin.com/in/jithendra-pathiraja" target="_blank" class="btn btn-primary">
+            <i class="fab fa-linkedin"></i> View on LinkedIn
+          </a>
+          <a href="reports/aerofoil-report.pdf" target="_blank" class="btn btn-outline">
+            <i class="fas fa-file-pdf"></i> Report
+          </a>
+          <a href="mailto:jithendrapathiraja3434@gmail.com?subject=Inquiry about Aerofoil Simulation Project" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+        </div>
+        <!-- GUIDE: Add photos to images/projects/fluid-p2/ when ready -->
+        <!-- GUIDE: Add report as reports/aerofoil-report.pdf when ready -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Jithendra Pathiraja. All rights reserved.</p>
+  <div class="footer-socials">
+    <a href="mailto:jithendrapathiraja3434@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/jithendra-pathiraja" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

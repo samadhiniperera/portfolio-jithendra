@@ -1,0 +1,5 @@
+Design and Development of a Reusable Welding Jig for the Vega Street Bike Chassis
+
+Description
+
+This project focused on the design and development of a reusable welding jig to support the accurate assembly of the Vega Street Bike chassis during fabrication. The primary objective was to ensure precise alignment and positioning of chassis members while welding, thereby minimizing dimensional errors and improving repeatability in the manufacturing process. The jig structure was designed to provide sufficient rigidity and stability while allowing easy placement and removal of chassis components. The final jig enabled more consistent chassis assembly, reduced fabrication time, and improved overall manufacturing accuracy.

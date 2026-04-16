@@ -1,0 +1,5 @@
+Front Suspension Analysis of the Vega Street Bike Using MATLAB
+
+Description
+
+During my internship at Vega Innovations, I performed a dynamic analysis of the front suspension system of the Vega Street Bike using MATLAB/Simulink. A simplified dynamic model of the motorcycle was developed to study the suspension response under bump excitation. The simulation was used to evaluate chassis displacement and analyze the effect of suspension stiffness and damping parameters on ride behavior. Through this analysis, the critical damping characteristics of the suspension system were investigated to better understand how suspension tuning influences vehicle stability and ride comfort.

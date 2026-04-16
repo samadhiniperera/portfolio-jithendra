@@ -1,0 +1,1 @@
+Add Academic project photos here in subfolders: project1/1.jpg, etc.
