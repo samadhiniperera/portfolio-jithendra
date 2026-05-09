@@ -6,26 +6,20 @@
   <title>Mechanical Simulations | Jithendra Pathiraja</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="index.html" class="logo">&lt;JP/&gt;</a>
+    <a href="index.html" class="logo">JP</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#home" class="nav-link">Home</a></li>
-      <li><a href="index.html#about" class="nav-link">About</a></li>
-      <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-      <li class="nav-dropdown">
-        <a href="#" class="nav-link dropdown-toggle active">Projects <i class="fa fa-caret-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="design-manufacturing.html"><i class="fa fa-cogs"></i> Design &amp; Manufacturing</a></li>
-          <li><a href="fluid-dynamics.html"><i class="fa fa-water"></i> Fluid Dynamics</a></li>
-          <li><a href="mechanical-simulations.html"><i class="fa fa-chart-line"></i> Mechanical Simulations</a></li>
-          <li><a href="academic-projects.html"><i class="fa fa-graduation-cap"></i> Academic Projects</a></li>
-        </ul>
-      </li>
-      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      <li><a href="index.html#hero"       class="nav-link">Home</a></li>
+      <li><a href="index.html#about"      class="nav-link">About</a></li>
+      <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+      <li><a href="index.html#skills"     class="nav-link">Skills</a></li>
+      <li><a href="design-manufacturing.html" class="nav-link active">Projects</a></li>
+      <li><a href="index.html#contact"    class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-actions">
       <button class="theme-toggle" id="themeToggle" title="Toggle theme">
@@ -36,29 +30,38 @@
   </div>
 </nav>
 
-<div class="page-hero">
-  <div class="section-tag">MECHANICAL SIMULATIONS</div>
-  <h2 class="section-title">Mechanical Simulations</h2>
-  <p class="section-subtitle">MATLAB, Simulink, FEA — modelling and analysing real-world mechanical behaviour</p>
+<div style="background:var(--bg2);border-bottom:1px solid var(--border);padding:0 36px;position:sticky;top:64px;z-index:500;">
+  <div style="max-width:1160px;margin:0 auto;display:flex;gap:0;overflow-x:auto;">
+    <a href="design-manufacturing.html"    style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--text-muted);border-bottom:2px solid transparent;white-space:nowrap;"><i class="fa fa-cogs"></i> Design &amp; Manufacturing</a>
+    <a href="fluid-dynamics.html"          style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--text-muted);border-bottom:2px solid transparent;white-space:nowrap;"><i class="fa fa-water"></i> Fluid Dynamics</a>
+    <a href="mechanical-simulations.html"  style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--gold);border-bottom:2px solid var(--gold);white-space:nowrap;"><i class="fa fa-chart-line"></i> Mechanical Simulations</a>
+    <a href="academic-projects.html"       style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--text-muted);border-bottom:2px solid transparent;white-space:nowrap;"><i class="fa fa-graduation-cap"></i> Academic Projects</a>
+  </div>
 </div>
 
-<section class="projects-section" id="mechanical-simulations">
-  <div class="section-container">
+<div class="page-hero">
+  <span class="section-label">Mechanical Simulations</span>
+  <h2 class="section-heading">Mechanical<br/><em>Simulations</em></h2>
+  <p class="page-hero-sub">MATLAB, Simulink, FEA — modelling and analysing real-world mechanical behaviour</p>
+</div>
 
-    <!-- PROJECT 1: Front Suspension Simulation — has real images and video -->
+<section class="projects-section">
+  <div class="container">
+
+    <!-- Front Suspension Analysis -->
     <div class="project-card">
       <div class="project-media">
         <div class="project-slideshow" data-project="sim1">
-          <img src="images/projects/sim-p1/1.jpg" alt="Suspension Analysis" class="proj-slide active" />
-          <img src="images/projects/sim-p1/2.jpg" alt="Suspension Model" class="proj-slide" />
-          <img src="images/projects/sim-p1/3.jpg" alt="Suspension Simulation" class="proj-slide" />
-          <img src="images/projects/sim-p1/4.jpg" alt="Suspension Results" class="proj-slide" />
-          <img src="images/projects/sim-p1/5.jpg" alt="Suspension Analysis" class="proj-slide" />
-          <img src="images/projects/sim-p1/6.png" alt="Simulink Model" class="proj-slide" />
-          <img src="images/projects/sim-p1/7.png" alt="MATLAB Results" class="proj-slide" />
-          <img src="images/projects/sim-p1/8.jpg" alt="Suspension Graph" class="proj-slide" />
-          <img src="images/projects/sim-p1/9.jpg" alt="Suspension Analysis" class="proj-slide" />
-          <img src="images/projects/sim-p1/10.jpg" alt="Suspension Analysis" class="proj-slide" />
+          <img src="images/projects/sim-p1/1.jpg"  alt="Suspension Analysis" class="proj-slide active" />
+          <img src="images/projects/sim-p1/2.jpg"  alt="Suspension Model"    class="proj-slide" />
+          <img src="images/projects/sim-p1/3.jpg"  alt="Simulation"          class="proj-slide" />
+          <img src="images/projects/sim-p1/4.jpg"  alt="Results"             class="proj-slide" />
+          <img src="images/projects/sim-p1/5.jpg"  alt="Analysis"            class="proj-slide" />
+          <img src="images/projects/sim-p1/6.png"  alt="Simulink Model"      class="proj-slide" />
+          <img src="images/projects/sim-p1/7.png"  alt="MATLAB Results"      class="proj-slide" />
+          <img src="images/projects/sim-p1/8.jpg"  alt="Graph"               class="proj-slide" />
+          <img src="images/projects/sim-p1/9.jpg"  alt="Analysis"            class="proj-slide" />
+          <img src="images/projects/sim-p1/10.jpg" alt="Analysis"            class="proj-slide" />
           <video class="proj-video" muted loop playsinline>
             <source src="videos/sim-p1/video.mp4" type="video/mp4" />
           </video>
@@ -70,30 +73,26 @@
         </div>
       </div>
       <div class="project-info">
-        <h3>Front Suspension Analysis — Vega Street Bike (MATLAB)</h3>
+        <h3>Front Suspension Analysis<br/>Vega Street Bike — MATLAB</h3>
         <div class="project-tags">
           <span>MATLAB</span><span>Simulink</span><span>Dynamics</span><span>Suspension</span><span>Internship</span>
         </div>
-        <p>During my internship at Vega Innovations, I performed a dynamic analysis of the front suspension system of the Vega Street Bike using MATLAB/Simulink. A simplified dynamic model of the motorcycle was developed to study the suspension response under bump excitation. The simulation was used to evaluate chassis displacement and analyse the effect of suspension stiffness and damping parameters on ride behaviour. Through this analysis, the critical damping characteristics of the suspension system were investigated to better understand how suspension tuning influences vehicle stability and ride comfort.</p>
+        <p>During my internship at Vega Innovations, I performed a dynamic analysis of the Vega Street Bike front suspension using MATLAB/Simulink. A simplified dynamic model was developed to study the suspension response under bump excitation — evaluating chassis displacement and the effect of stiffness and damping parameters on ride behaviour.</p>
         <ul class="project-highlights">
           <li><i class="fas fa-check-circle"></i> MATLAB/Simulink dynamic suspension model developed</li>
           <li><i class="fas fa-check-circle"></i> Bump excitation response simulation completed</li>
           <li><i class="fas fa-check-circle"></i> Critical damping characteristics investigated</li>
           <li><i class="fas fa-check-circle"></i> Suspension stiffness and damping parameter study</li>
-          <li><i class="fas fa-check-circle"></i> Simulation video included — use arrows or wait for auto-advance</li>
+          <li><i class="fas fa-check-circle"></i> Simulation video included — use arrows to navigate</li>
         </ul>
         <div class="project-buttons">
-          <a href="https://www.linkedin.com/in/jithendra-pathiraja" target="_blank" class="btn btn-primary">
+          <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/" target="_blank" class="btn-proj-primary">
             <i class="fab fa-linkedin"></i> View on LinkedIn
           </a>
-          <a href="reports/suspension-report.pdf" target="_blank" class="btn btn-outline">
+          <a href="reports/suspension-report.pdf" target="_blank" class="btn-proj-outline">
             <i class="fas fa-file-pdf"></i> Report
           </a>
-          <a href="mailto:jithendrapathiraja3434@gmail.com?subject=Inquiry about Suspension Analysis Project" class="btn btn-outline">
-            <i class="fas fa-envelope"></i> Email Me
-          </a>
         </div>
-        <!-- GUIDE: Add report PDF as reports/suspension-report.pdf -->
       </div>
     </div>
 
@@ -101,10 +100,13 @@
 </section>
 
 <footer class="footer">
-  <p>&copy; 2025 Jithendra Pathiraja. All rights reserved.</p>
-  <div class="footer-socials">
-    <a href="mailto:jithendrapathiraja3434@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.linkedin.com/in/jithendra-pathiraja" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <div class="footer-inner">
+    <span class="footer-logo">JP</span>
+    <p>&copy; 2025 Jithendra Pathiraja</p>
+    <div class="footer-socials">
+      <a href="mailto:jithendrapathiraja3434@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
   </div>
 </footer>
 
