@@ -43,22 +43,7 @@
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-profile-wrap">
-        <img src="images/profile.png" alt="Jithendra Pathiraja" class="hero-profile-img" />
-      </div>
-      <div class="hero-socials">
-        <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/"
-           target="_blank" class="hero-social-link linkedin" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:jithendrapathiraja3434@gmail.com"
-           class="hero-social-link gmail" title="Email me">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-
+    <!-- LEFT: Text + socials -->
     <div class="hero-right">
       <p class="hero-eyebrow">Mechanical Engineer · University of Moratuwa</p>
       <h1 class="hero-name">
@@ -80,6 +65,26 @@
         <a href="#about" class="btn-hero-outline">
           Learn More <i class="fas fa-arrow-down"></i>
         </a>
+      </div>
+
+      <!-- Social icons below buttons -->
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/"
+           target="_blank" class="hero-social-link linkedin" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:jithendrapathiraja3434@gmail.com"
+           class="hero-social-link gmail" title="Email me">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Profile photo with accent square -->
+    <div class="hero-left">
+      <div class="hero-photo-wrap">
+        <div class="hero-accent-square"></div>
+        <img src="images/profile.png" alt="Jithendra Pathiraja" class="hero-profile-img" />
       </div>
     </div>
   </div>
@@ -172,7 +177,11 @@
     <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
     <div class="modal-grid">
       <div class="modal-img-col">
-        <img src="About/1.jpeg" alt="Jithendra Pathiraja" class="modal-profile-img" />
+        <!-- =====================================================
+          IMAGE: images/profile.png (same as hero photo)
+          This displays full-size, no frame, transparent background
+        ===================================================== -->
+        <img src="images/profile.png" alt="Jithendra Pathiraja" class="modal-profile-img" />
         <div class="modal-tags">
           <span>SolidWorks</span><span>MATLAB</span><span>CFD</span>
           <span>FEA</span><span>Python</span><span>Arduino</span>
@@ -215,62 +224,74 @@
     <div class="proj-cards-grid">
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-wrench"></i>
-          <span>Welding Jig</span>
+        <!-- =====================================================
+          IMAGE: images/projects/dm-p1/cover.jpg
+          Rename one of your welding jig photos to: cover.jpg
+          Place it in: images/projects/dm-p1/
+        ===================================================== -->
+        <img src="images/projects/dm-p1/cover.jpeg" alt="Welding Jig" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-wrench"></i><span>Welding Jig</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">SolidWorks · Manufacturing · CAD</p>
           <h4 class="proj-card-title">Reusable Welding Jig — Vega Street Bike Chassis</h4>
           <p class="proj-card-desc">Designed a reusable welding jig for accurate chassis assembly, ensuring precise alignment during welding and improving fabrication repeatability.</p>
-          <a href="design-manufacturing.html#dm1" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="design-manufacturing.html#dm1" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-motorcycle"></i>
-          <span>Paddock Stand</span>
+        <!-- =====================================================
+          IMAGE: images/projects/dm-p2/cover.jpg
+          Rename one of your paddock stand photos to: cover.jpg
+          Place it in: images/projects/dm-p2/
+        ===================================================== -->
+        <img src="images/projects/dm-p2/cover.jpeg" alt="Paddock Stand" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-motorcycle"></i><span>Paddock Stand</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">SolidWorks · FEA · Fabrication</p>
           <h4 class="proj-card-title">Rear Paddock Stand — Vega Street Bike</h4>
           <p class="proj-card-desc">Designed, FEA-validated, and physically fabricated a rear paddock stand for safe wheel elevation. Tested on the actual motorcycle.</p>
-          <a href="design-manufacturing.html#dm2" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="design-manufacturing.html#dm2" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-car"></i>
-          <span>Quick Jack</span>
+        <!-- =====================================================
+          IMAGE: images/projects/dm-p3/cover.jpg
+          Add a quick jack photo named: cover.jpg
+          Place it in: images/projects/dm-p3/
+        ===================================================== -->
+        <img src="images/projects/dm-p3/cover.jpg" alt="Quick Jack" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-car"></i><span>Quick Jack</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">SolidWorks · Race Car · Mechanical Design</p>
           <h4 class="proj-card-title">Quick Jack — Falcon E2 Race Car</h4>
           <p class="proj-card-desc">Designed a rapid-deployment quick jack mechanism optimised for pit-stop speed and packaging constraints of the Falcon E2 race car.</p>
-          <a href="design-manufacturing.html#dm3" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="design-manufacturing.html#dm3" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-steering-wheel"></i>
-          <span>Steering Redesign</span>
+        <!-- =====================================================
+          IMAGE: images/projects/dm-p4/cover.jpg
+          Add a steering redesign photo named: cover.jpg
+          Place it in: images/projects/dm-p4/
+        ===================================================== -->
+        <img src="images/projects/dm-p4/cover.jpeg" alt="Steering Redesign" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-car"></i><span>Steering Redesign</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">SolidWorks · Kinematics · Race Car</p>
           <h4 class="proj-card-title">Steering System Redesign — Falcon E2 Race Car</h4>
-          <p class="proj-card-desc">Redesigned the steering system with improved Ackermann geometry, reduced bump steer, and better driver ergonomics.</p>
-          <a href="design-manufacturing.html#dm4" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <p class="proj-card-desc">Redesigned the steering system with improved Anti-Ackermann geometry, reduced bump steer, and better driver ergonomics.</p>
+          <a href="design-manufacturing.html#dm4" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -281,32 +302,38 @@
     <div class="proj-cards-grid">
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-flask"></i>
-          <span>Hydrodynamic Tunnel</span>
+        <!-- =====================================================
+          IMAGE: images/projects/fluid-p1/cover.jpg
+          Add a hydrodynamic tunnel photo/render named: cover.jpg
+          Place it in: images/projects/fluid-p1/
+        ===================================================== -->
+        <img src="images/projects/fluid-p1/cover.jpg" alt="Hydrodynamic Tunnel" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-flask"></i><span>Hydrodynamic Tunnel</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">CFD · Hydrodynamics · Final Year Project</p>
           <h4 class="proj-card-title">Hydrodynamic Tunnel Design — Final Year Project</h4>
           <p class="proj-card-desc">Full design, CFD flow characterisation, and structural feasibility study of a hydrodynamic tunnel facility. Research ongoing.</p>
-          <a href="fluid-dynamics.html#fd1" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="fluid-dynamics.html#fd1" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-wind"></i>
-          <span>Aerofoil CFD</span>
+        <!-- =====================================================
+          IMAGE: images/projects/fluid-p2/cover.jpg
+          Add an aerofoil CFD screenshot named: cover.jpg
+          Place it in: images/projects/fluid-p2/
+        ===================================================== -->
+        <img src="images/projects/fluid-p2/cover.jpg" alt="Aerofoil CFD" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-wind"></i><span>Aerofoil CFD</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">CFD · ANSYS Fluent · Aerodynamics</p>
           <h4 class="proj-card-title">Aerofoil CFD Simulations — ANSYS Fluent</h4>
           <p class="proj-card-desc">Simulated lift and drag coefficients at varying angles of attack, validated against theoretical and experimental data.</p>
-          <a href="fluid-dynamics.html#fd2" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="fluid-dynamics.html#fd2" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -317,17 +344,20 @@
     <div class="proj-cards-grid">
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-wave-square"></i>
-          <span>Suspension Dynamics</span>
+        <!-- =====================================================
+          IMAGE: images/projects/sim-p1/cover.jpg
+          Rename one of your MATLAB/suspension screenshots to: cover.jpg
+          Place it in: images/projects/sim-p1/
+        ===================================================== -->
+        <img src="images/projects/sim-p1/cover.jpeg" alt="Suspension Dynamics" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-wave-square"></i><span>Suspension Dynamics</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">MATLAB · Simulink · Dynamics</p>
           <h4 class="proj-card-title">Front Suspension Analysis — Vega Street Bike</h4>
           <p class="proj-card-desc">Dynamic analysis of front suspension under bump excitation using MATLAB/Simulink — stiffness, damping, and ride comfort study.</p>
-          <a href="mechanical-simulations.html#sim1" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="mechanical-simulations.html#sim1" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -338,17 +368,20 @@
     <div class="proj-cards-grid">
 
       <div class="proj-preview-card">
-        <div class="proj-cover-placeholder">
-          <i class="fas fa-robot"></i>
-          <span>Mechatronics</span>
+        <!-- =====================================================
+          IMAGE: images/projects/academic/cover.jpg
+          Add any academic/mechatronics project photo named: cover.jpg
+          Place it in: images/projects/academic/
+        ===================================================== -->
+        <img src="images/projects/academic/cover.jpeg" alt="Mechatronics" class="proj-cover-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="proj-cover-placeholder" style="display:none;">
+          <i class="fas fa-robot"></i><span>Mechatronics</span>
         </div>
         <div class="proj-card-body">
           <p class="proj-card-tag">Arduino · Python · OpenCV</p>
           <h4 class="proj-card-title">Mechatronics &amp; Academic Projects</h4>
           <p class="proj-card-desc">University coursework covering Arduino systems, Raspberry Pi, OpenCV computer vision, and thermodynamics/fluid mechanics assignments.</p>
-          <a href="academic-projects.html" class="btn-see-more">
-            See More <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="academic-projects.html" class="btn-see-more">See More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -371,28 +404,67 @@
     </div>
 
     <div class="exp-grid">
+
+      <!-- CARD 1: Vega Internship -->
       <div class="exp-card featured">
         <div class="exp-card-header">
           <div class="exp-icon"><i class="fas fa-industry"></i></div>
           <div>
             <span class="exp-type">Industrial Internship</span>
             <h3>Vega Innovations (Pvt) Ltd</h3>
-            <span class="exp-period">2023 · Sri Lanka</span>
+            <span class="exp-period">Dec 2024 – Jun 2025 · Colombo, Sri Lanka</span>
           </div>
         </div>
+        <!-- =====================================================
+          IMAGE: images/experience/vega.jpg
+          Add a photo from your Vega internship (lab, bike, jig, etc.)
+          Place it in: images/experience/
+          Rename it to: vega.jpg
+        ===================================================== -->
+        <img src="images/experience/vega.jpeg" alt="Vega Innovations" class="exp-section-img" onerror="this.style.display='none';" />
         <p>Completed an industrial internship at Vega Innovations, a leading motorcycle manufacturer in Sri Lanka, contributing to both design and simulation tasks.</p>
         <ul class="exp-list">
           <li>Designed and developed a <strong>reusable welding jig</strong> for the Vega Street Bike chassis using SolidWorks — ensuring dimensional accuracy and fabrication repeatability</li>
           <li>Designed a <strong>rear paddock stand</strong> with full FEA validation in SolidWorks Simulation, physically fabricated and tested on-bike</li>
-          <!-- <li>Designed a <strong>quick jack mechanism</strong> for the Falcon E2 race car, optimised for pit-stop speed and packaging constraints</li> -->
           <li>Conducted <strong>MATLAB/Simulink suspension dynamics analysis</strong> — modelling bump excitation response and investigating critical damping parameters for ride comfort optimisation</li>
-          <!-- <li>Redesigned the <strong>steering system</strong> of the Falcon E2 with improved Ackermann geometry and reduced bump steer</li> -->
+          <li>Designed and developed a <strong>rear paddock stand</strong> to enable stable lifting during maintenance operations</li>
         </ul>
         <div class="exp-tags">
           <span>SolidWorks</span><span>FEA</span><span>MATLAB</span><span>Simulink</span><span>Fabrication</span>
         </div>
       </div>
 
+      <!-- CARD 2: FalconE Racing -->
+      <div class="exp-card">
+        <div class="exp-card-header">
+          <div class="exp-icon"><i class="fas fa-flag-checkered"></i></div>
+          <div>
+            <span class="exp-type">Formula Student Racing Team</span>
+            <h3>Team FalconE Racing</h3>
+            <span class="exp-period">Aug 2024 – Present · University of Moratuwa</span>
+          </div>
+        </div>
+        <!-- =====================================================
+          IMAGE: images/experience/falcon.jpg
+          Add a photo of the race car, team, or steering/jack work
+          Place it in: images/experience/
+          Rename it to: falcon.jpg
+        ===================================================== -->
+        <img src="images/experience/falcon.jpeg" alt="FalconE Racing" class="exp-section-img" onerror="this.style.display='none';" />
+        <p>Active member and Steering Engineer of the University of Moratuwa Formula Student race car team, responsible for designing and optimising the vehicle's steering system.</p>
+        <ul class="exp-list">
+          <li>Designed and developed an <strong>improved steering mount</strong> between the steering column and shaft to increase rigidity and prevent flex under high steering torque</li>
+          <li>Designed and developed a <strong>quick jack system</strong> for the Falcon E2 race car to enable rapid wheel and undercarriage access during pit stops</li>
+          <li>Redesigned the <strong>steering system</strong> with improved Anti-Ackermann geometry and reduced bump steer for better handling precision</li>
+          <li>Responsible for <strong>maintenance, troubleshooting, and continuous optimisation</strong> of the vehicle's steering system to ensure performance and reliability</li>
+          <li>Studied <strong>steering system design principles</strong> and performed steering torque calculations for the FalconE Formula Student race car</li>
+        </ul>
+        <div class="exp-tags">
+          <span>SolidWorks</span><span>Steering Design</span><span>Kinematics</span><span>Race Car</span><span>CAD</span>
+        </div>
+      </div>
+
+      <!-- CARD 3: Final Year Project -->
       <div class="exp-card">
         <div class="exp-card-header">
           <div class="exp-icon"><i class="fas fa-flask"></i></div>
@@ -402,17 +474,25 @@
             <span class="exp-period">2024 – Present · University of Moratuwa</span>
           </div>
         </div>
-        <p>Conducting full hydrodynamic tunnel design, CFD characterisation, and structural feasibility analysis.</p>
+        <!-- =====================================================
+          IMAGE: images/experience/fyp.jpg
+          Add a photo or CFD render from your FYP
+          Place it in: images/experience/
+          Rename it to: fyp.jpg
+        ===================================================== -->
+        <img src="images/experience/fyp.jpeg" alt="Final Year Project" class="exp-section-img" onerror="this.style.display='none';" />
+        <p>Conducting full hydrodynamic tunnel design, CFD characterisation, and structural feasibility analysis as final year research project.</p>
         <ul class="exp-list">
-          <li>Full tunnel concept design from hydrodynamic first principles</li>
-          <li>CFD flow modelling to characterise test section uniformity</li>
-          <li>Structural design and construction feasibility assessment</li>
+          <li>Designing a <strong>laboratory-scale hydrodynamic tunnel</strong> to achieve controlled, low-turbulence flow conditions</li>
+          <li>Performing <strong>CFD simulations (ANSYS)</strong> to analyse flow behaviour and pressure distribution</li>
+          <li>Developing <strong>CAD models</strong> and optimising key components for improved flow uniformity</li>
         </ul>
         <div class="exp-tags">
-          <span>CFD</span><span>Hydrodynamics</span><span>Research</span><span>Structural Design</span>
+          <span>CFD</span><span>Hydrodynamics</span><span>Research</span><span>ANSYS</span>
         </div>
       </div>
 
+      <!-- CARD 4: Academic Projects -->
       <div class="exp-card">
         <div class="exp-card-header">
           <div class="exp-icon"><i class="fas fa-graduation-cap"></i></div>
@@ -422,6 +502,13 @@
             <span class="exp-period">2021 – Present</span>
           </div>
         </div>
+        <!-- =====================================================
+          IMAGE: images/experience/academic.jpg
+          Add a photo from any academic lab/project/Arduino work
+          Place it in: images/experience/
+          Rename it to: academic.jpg
+        ===================================================== -->
+        <img src="images/experience/academic.jpeg" alt="Academic Projects" class="exp-section-img" onerror="this.style.display='none';" />
         <p>Extensive coursework spanning simulation, design, mechatronics, and fluid mechanics.</p>
         <ul class="exp-list">
           <li>Aerofoil CFD simulations in ANSYS Fluent — lift and drag validation</li>
@@ -432,6 +519,7 @@
           <span>ANSYS</span><span>Arduino</span><span>Python</span><span>OpenCV</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -444,94 +532,116 @@
       <h2 class="section-heading">Technical Expertise</h2>
     </div>
 
-    <div class="skills-main-grid">
-      <div class="skill-group">
-        <div class="skill-group-icon"><i class="fas fa-drafting-compass"></i></div>
-        <h3>Design &amp; Manufacturing</h3>
-        <div class="skill-bars">
-          <div class="skill-row">
-            <span>SolidWorks</span>
-            <div class="sbar"><div class="sbar-fill" style="width:85%"></div></div>
-            <span class="sbar-pct">85%</span>
-          </div>
-          <div class="skill-row">
-            <span>AutoCAD</span>
-            <div class="sbar"><div class="sbar-fill" style="width:75%"></div></div>
-            <span class="sbar-pct">75%</span>
-          </div>
-          <div class="skill-row">
-            <span>CATIA</span>
-            <div class="sbar"><div class="sbar-fill" style="width:60%"></div></div>
-            <span class="sbar-pct">60%</span>
-          </div>
+    <div class="skills-accordion-grid">
+
+      <!-- Row 1 -->
+      <div class="skill-acc-card">
+        <button class="skill-acc-header active" onclick="toggleSkill(this)">
+          <span><i class="fas fa-drafting-compass"></i> Design &amp; Manufacturing</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul>
+            <li><i class="fas fa-check"></i> SolidWorks</li>
+            <li><i class="fas fa-check"></i> Solid Edge</li>
+            <li><i class="fas fa-check"></i> AutoCAD</li>
+            <li><i class="fas fa-check"></i> Rhinoceros 3D</li>
+          </ul>
         </div>
       </div>
 
-      <div class="skill-group">
-        <div class="skill-group-icon"><i class="fas fa-chart-line"></i></div>
-        <h3>Simulation &amp; Analysis</h3>
-        <div class="skill-bars">
-          <div class="skill-row">
-            <span>MATLAB / Simulink</span>
-            <div class="sbar"><div class="sbar-fill" style="width:80%"></div></div>
-            <span class="sbar-pct">80%</span>
-          </div>
-          <div class="skill-row">
-            <span>ANSYS FEA</span>
-            <div class="sbar"><div class="sbar-fill" style="width:70%"></div></div>
-            <span class="sbar-pct">70%</span>
-          </div>
-          <div class="skill-row">
-            <span>CFD (Fluent)</span>
-            <div class="sbar"><div class="sbar-fill" style="width:58%"></div></div>
-            <span class="sbar-pct">58%</span>
-          </div>
+      <div class="skill-acc-card">
+        <button class="skill-acc-header active" onclick="toggleSkill(this)">
+          <span><i class="fas fa-chart-line"></i> Simulation &amp; Analysis</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul>
+            <li><i class="fas fa-check"></i> ANSYS (FEA &amp; CFD / Fluent)</li>
+            <li><i class="fas fa-check"></i> SolidWorks Simulation</li>
+            <li><i class="fas fa-check"></i> MATLAB / Simulink</li>
+            <li><i class="fas fa-check"></i> Simscape Multibody</li>
+            <li><i class="fas fa-check"></i> Orca3D / Maxsurf</li>
+          </ul>
         </div>
       </div>
 
-      <div class="skill-group">
-        <div class="skill-group-icon"><i class="fas fa-robot"></i></div>
-        <h3>Mechatronics &amp; Programming</h3>
-        <div class="skill-bars">
-          <div class="skill-row">
-            <span>Arduino / Raspberry Pi</span>
-            <div class="sbar"><div class="sbar-fill" style="width:78%"></div></div>
-            <span class="sbar-pct">78%</span>
-          </div>
-          <div class="skill-row">
-            <span>Python</span>
-            <div class="sbar"><div class="sbar-fill" style="width:65%"></div></div>
-            <span class="sbar-pct">65%</span>
-          </div>
-          <div class="skill-row">
-            <span>OpenCV / TensorFlow</span>
-            <div class="sbar"><div class="sbar-fill" style="width:55%"></div></div>
-            <span class="sbar-pct">55%</span>
-          </div>
+      <!-- Row 2 -->
+      <div class="skill-acc-card">
+        <button class="skill-acc-header" onclick="toggleSkill(this)">
+          <span><i class="fas fa-code"></i> Programming Languages</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul>
+            <li><i class="fas fa-check"></i> Python</li>
+            <li><i class="fas fa-check"></i> C++</li>
+            <li><i class="fas fa-check"></i> MATLAB Scripting</li>
+          </ul>
         </div>
       </div>
 
-      <div class="skill-group">
-        <div class="skill-group-icon"><i class="fas fa-industry"></i></div>
-        <h3>Manufacturing</h3>
-        <div class="skill-bars">
-          <div class="skill-row">
-            <span>Welding &amp; Fabrication</span>
-            <div class="sbar"><div class="sbar-fill" style="width:72%"></div></div>
-            <span class="sbar-pct">72%</span>
-          </div>
-          <div class="skill-row">
-            <span>CNC Machining</span>
-            <div class="sbar"><div class="sbar-fill" style="width:65%"></div></div>
-            <span class="sbar-pct">65%</span>
-          </div>
-          <div class="skill-row">
-            <span>3D Printing / Prototyping</span>
-            <div class="sbar"><div class="sbar-fill" style="width:60%"></div></div>
-            <span class="sbar-pct">60%</span>
-          </div>
+      <div class="skill-acc-card">
+        <button class="skill-acc-header" onclick="toggleSkill(this)">
+          <span><i class="fas fa-robot"></i> Mechatronics &amp; Embedded</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul>
+            <li><i class="fas fa-check"></i> Arduino</li>
+            <li><i class="fas fa-check"></i> Raspberry Pi</li>
+            <li><i class="fas fa-check"></i> OpenCV (Computer Vision)</li>
+            <li><i class="fas fa-check"></i> TensorFlow (CNN)</li>
+          </ul>
         </div>
       </div>
+
+      <!-- Row 3 -->
+      <div class="skill-acc-card">
+        <button class="skill-acc-header" onclick="toggleSkill(this)">
+          <span><i class="fas fa-industry"></i> Manufacturing &amp; Fabrication</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul>
+            <li><i class="fas fa-check"></i> Mechanical Design</li>
+            <li><i class="fas fa-check"></i> Design for Manufacturing (DFM)</li>
+            <li><i class="fas fa-check"></i> Welding &amp; Fabrication</li>
+            <li><i class="fas fa-check"></i> Prototyping</li>
+            <li><i class="fas fa-check"></i> Mechanism Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-acc-card">
+        <button class="skill-acc-header" onclick="toggleSkill(this)">
+          <span><i class="fas fa-users"></i> Soft Skills</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul>
+            <li><i class="fas fa-check"></i> Communication</li>
+            <li><i class="fas fa-check"></i> Leadership</li>
+            <li><i class="fas fa-check"></i> Teamwork</li>
+            <li><i class="fas fa-check"></i> Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Row 4 - Languages (full width) -->
+      <div class="skill-acc-card skill-acc-full">
+        <button class="skill-acc-header" onclick="toggleSkill(this)">
+          <span><i class="fas fa-language"></i> Languages</span>
+          <i class="fas fa-chevron-down skill-acc-arrow"></i>
+        </button>
+        <div class="skill-acc-body">
+          <ul class="skill-inline">
+            <li><i class="fas fa-check"></i> English (Professional Proficiency)</li>
+            <li><i class="fas fa-check"></i> Sinhala (Native Proficiency)</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
     <div class="awards-interests-grid">
@@ -541,15 +651,22 @@
           <li>
             <span class="ai-dot"></span>
             <div>
-              <strong>Dean's List Recognition</strong>
+              <strong>IMechE SL Group Final Year Project Award</strong>
+              <p>Institution of Mechanical Engineers (IMechE), Sri Lanka Group — Dec 2025. Awarded for outstanding performance, innovation, and teamwork.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ai-dot"></span>
+            <div>
+              <strong>Dean's List Recognition — Semesters 2, 4 &amp; 6</strong>
               <p>University of Moratuwa — Academic Excellence</p>
             </div>
           </li>
           <li>
             <span class="ai-dot"></span>
             <div>
-              <strong>Falcom Team of University of Moratuwa — Steering Enginner</strong>
-              <p>Community service and leadership development</p>
+              <strong>Steering Engineer — FalconE Racing</strong>
+              <p>University of Moratuwa Formula Student Team</p>
             </div>
           </li>
           <li>
@@ -572,7 +689,6 @@
           <span><i class="fas fa-car"></i> Automotive Systems</span>
           <span><i class="fas fa-wind"></i> Aerodynamics &amp; CFD</span>
           <span><i class="fas fa-chess"></i> Chess &amp; Strategy</span>
-          <!-- <span><i class="fas fa-camera"></i> Photography</span> -->
         </div>
       </div>
     </div>
