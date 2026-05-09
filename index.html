@@ -6,21 +6,21 @@
   <title>Jithendra Pathiraja | Mechanical Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <!-- ========== NAVBAR ========== -->
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="#hero" class="logo">JP</a>
+    <a href="#hero" class="logo">Jithendra <span>Pathiraja</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero" class="nav-link active">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#hero"       class="nav-link active">Home</a></li>
+      <li><a href="#about"      class="nav-link">About</a></li>
       <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
       <li><a href="design-manufacturing.html" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-actions">
       <button class="theme-toggle" id="themeToggle" title="Toggle theme">
@@ -33,7 +33,6 @@
 
 <!-- ========== HERO SECTION ========== -->
 <section id="hero" class="hero-section">
-  <!-- Background slideshow from About images -->
   <div class="hero-bg-slideshow">
     <div class="hero-bg-slide active" style="background-image: url('About/1.jpeg')"></div>
     <div class="hero-bg-slide" style="background-image: url('About/2.jpeg')"></div>
@@ -46,27 +45,37 @@
   <div class="hero-content">
     <div class="hero-left">
       <div class="hero-profile-wrap">
-        <img src="images/profile.jpeg" alt="Jithendra Pathiraja" class="hero-profile-img" />
+        <img src="images/profile.png" alt="Jithendra Pathiraja" class="hero-profile-img" />
       </div>
       <div class="hero-socials">
-        <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/" target="_blank" class="hero-social-link" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/"
+           target="_blank" class="hero-social-link linkedin" title="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="mailto:jithendrapathiraja3434@gmail.com" class="hero-social-link" title="Email">
+        <a href="mailto:jithendrapathiraja3434@gmail.com"
+           class="hero-social-link gmail" title="Email me">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
     </div>
+
     <div class="hero-right">
-      <p class="hero-eyebrow">Mechanical Engineer</p>
-      <h1 class="hero-name">Jithendra<br/><em>Pathiraja</em></h1>
+      <p class="hero-eyebrow">Mechanical Engineer · University of Moratuwa</p>
+      <h1 class="hero-name">
+        Jithendra<br/>
+        <span class="accent">Pathiraja</span>
+      </h1>
       <p class="hero-tagline">
-        Final Year Undergraduate &middot; University of Moratuwa<br/>
-        CAD &bull; Simulation &bull; Mechatronics &bull; Fluid Dynamics
+        Final Year Undergraduate specialising in Mechanical Engineering.<br/>
+        CAD &bull; FEA &bull; CFD &bull; Simulation &bull; Mechatronics &bull; Fabrication
       </p>
+
       <div class="hero-cta-row">
         <a href="cv/Jithendra_CV.pdf" download class="btn-hero-primary">
           <i class="fas fa-download"></i> Download CV
+        </a>
+        <a href="#projects-preview" class="btn-view-projects">
+          <i class="fas fa-folder-open"></i> View Projects
         </a>
         <a href="#about" class="btn-hero-outline">
           Learn More <i class="fas fa-arrow-down"></i>
@@ -119,7 +128,7 @@
             <i class="fas fa-play-circle"></i> 2-Minute Summary
           </button>
           <a href="cv/Jithendra_CV.pdf" download class="btn-cv">
-            <i class="fas fa-file-alt"></i> Full CV
+            <i class="fas fa-file-alt"></i> Download CV
           </a>
         </div>
       </div>
@@ -135,7 +144,7 @@
               <p>University of Moratuwa, Sri Lanka</p>
               <ul class="tl-highlights">
                 <li>Final Year Project: Hydrodynamic Tunnel Design &amp; Analysis</li>
-                <li>Active member, Rotaract Club of University of Moratuwa</li>
+                <li>Active member, Falcon Team of University of Moratuwa</li>
               </ul>
             </div>
           </div>
@@ -157,13 +166,13 @@
   </div>
 </section>
 
-<!-- 2-Minute Summary Modal -->
+<!-- ========== 2-MINUTE SUMMARY MODAL ========== -->
 <div class="summary-modal" id="summaryModal">
   <div class="summary-modal-inner">
     <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
     <div class="modal-grid">
       <div class="modal-img-col">
-        <img src="images/profile.jpeg" alt="Jithendra Pathiraja" class="modal-profile-img" />
+        <img src="About/1.jpeg" alt="Jithendra Pathiraja" class="modal-profile-img" />
         <div class="modal-tags">
           <span>SolidWorks</span><span>MATLAB</span><span>CFD</span>
           <span>FEA</span><span>Python</span><span>Arduino</span>
@@ -189,16 +198,179 @@
 </div>
 <div class="modal-backdrop" id="modalBackdrop"></div>
 
+<!-- ========== PROJECTS PREVIEW SECTION ========== -->
+<section id="projects-preview" class="projects-preview-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">02 — Projects</span>
+      <h2 class="section-heading">Engineering Projects</h2>
+    </div>
+    <p class="projects-preview-intro">
+      A showcase of hands-on engineering work spanning design, fabrication, simulation, and fluid dynamics research.
+      Click <strong>See More</strong> on any project to view full details, photos, and reports.
+    </p>
+
+    <!-- ── Design & Manufacturing ── -->
+    <h3 class="proj-category-title"><i class="fas fa-cogs"></i> Design &amp; Manufacturing</h3>
+    <div class="proj-cards-grid">
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-wrench"></i>
+          <span>Welding Jig</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">SolidWorks · Manufacturing · CAD</p>
+          <h4 class="proj-card-title">Reusable Welding Jig — Vega Street Bike Chassis</h4>
+          <p class="proj-card-desc">Designed a reusable welding jig for accurate chassis assembly, ensuring precise alignment during welding and improving fabrication repeatability.</p>
+          <a href="design-manufacturing.html#dm1" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-motorcycle"></i>
+          <span>Paddock Stand</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">SolidWorks · FEA · Fabrication</p>
+          <h4 class="proj-card-title">Rear Paddock Stand — Vega Street Bike</h4>
+          <p class="proj-card-desc">Designed, FEA-validated, and physically fabricated a rear paddock stand for safe wheel elevation. Tested on the actual motorcycle.</p>
+          <a href="design-manufacturing.html#dm2" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-car"></i>
+          <span>Quick Jack</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">SolidWorks · Race Car · Mechanical Design</p>
+          <h4 class="proj-card-title">Quick Jack — Falcon E2 Race Car</h4>
+          <p class="proj-card-desc">Designed a rapid-deployment quick jack mechanism optimised for pit-stop speed and packaging constraints of the Falcon E2 race car.</p>
+          <a href="design-manufacturing.html#dm3" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-steering-wheel"></i>
+          <span>Steering Redesign</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">SolidWorks · Kinematics · Race Car</p>
+          <h4 class="proj-card-title">Steering System Redesign — Falcon E2 Race Car</h4>
+          <p class="proj-card-desc">Redesigned the steering system with improved Ackermann geometry, reduced bump steer, and better driver ergonomics.</p>
+          <a href="design-manufacturing.html#dm4" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Fluid Dynamics ── -->
+    <h3 class="proj-category-title"><i class="fas fa-water"></i> Fluid Dynamics</h3>
+    <div class="proj-cards-grid">
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-flask"></i>
+          <span>Hydrodynamic Tunnel</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">CFD · Hydrodynamics · Final Year Project</p>
+          <h4 class="proj-card-title">Hydrodynamic Tunnel Design — Final Year Project</h4>
+          <p class="proj-card-desc">Full design, CFD flow characterisation, and structural feasibility study of a hydrodynamic tunnel facility. Research ongoing.</p>
+          <a href="fluid-dynamics.html#fd1" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-wind"></i>
+          <span>Aerofoil CFD</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">CFD · ANSYS Fluent · Aerodynamics</p>
+          <h4 class="proj-card-title">Aerofoil CFD Simulations — ANSYS Fluent</h4>
+          <p class="proj-card-desc">Simulated lift and drag coefficients at varying angles of attack, validated against theoretical and experimental data.</p>
+          <a href="fluid-dynamics.html#fd2" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Mechanical Simulations ── -->
+    <h3 class="proj-category-title"><i class="fas fa-chart-line"></i> Mechanical Simulations</h3>
+    <div class="proj-cards-grid">
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-wave-square"></i>
+          <span>Suspension Dynamics</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">MATLAB · Simulink · Dynamics</p>
+          <h4 class="proj-card-title">Front Suspension Analysis — Vega Street Bike</h4>
+          <p class="proj-card-desc">Dynamic analysis of front suspension under bump excitation using MATLAB/Simulink — stiffness, damping, and ride comfort study.</p>
+          <a href="mechanical-simulations.html#sim1" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Academic Projects ── -->
+    <h3 class="proj-category-title"><i class="fas fa-graduation-cap"></i> Academic Projects</h3>
+    <div class="proj-cards-grid">
+
+      <div class="proj-preview-card">
+        <div class="proj-cover-placeholder">
+          <i class="fas fa-robot"></i>
+          <span>Mechatronics</span>
+        </div>
+        <div class="proj-card-body">
+          <p class="proj-card-tag">Arduino · Python · OpenCV</p>
+          <h4 class="proj-card-title">Mechatronics &amp; Academic Projects</h4>
+          <p class="proj-card-desc">University coursework covering Arduino systems, Raspberry Pi, OpenCV computer vision, and thermodynamics/fluid mechanics assignments.</p>
+          <a href="academic-projects.html" class="btn-see-more">
+            See More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:56px;">
+      <a href="design-manufacturing.html" class="btn-hero-primary">
+        <i class="fas fa-folder-open"></i> View Full Project Portfolio
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ========== EXPERIENCE SECTION ========== -->
 <section id="experience" class="section experience-section">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">02 — Experience</span>
+      <span class="section-label">03 — Experience</span>
       <h2 class="section-heading">Engineering Background</h2>
     </div>
 
     <div class="exp-grid">
-      <!-- Internship -->
       <div class="exp-card featured">
         <div class="exp-card-header">
           <div class="exp-icon"><i class="fas fa-industry"></i></div>
@@ -212,16 +384,15 @@
         <ul class="exp-list">
           <li>Designed and developed a <strong>reusable welding jig</strong> for the Vega Street Bike chassis using SolidWorks — ensuring dimensional accuracy and fabrication repeatability</li>
           <li>Designed a <strong>rear paddock stand</strong> with full FEA validation in SolidWorks Simulation, physically fabricated and tested on-bike</li>
-          <li>Designed a <strong>quick jack mechanism</strong> for the Falcon E2 race car, optimised for pit-stop speed and packaging constraints</li>
+          <!-- <li>Designed a <strong>quick jack mechanism</strong> for the Falcon E2 race car, optimised for pit-stop speed and packaging constraints</li> -->
           <li>Conducted <strong>MATLAB/Simulink suspension dynamics analysis</strong> — modelling bump excitation response and investigating critical damping parameters for ride comfort optimisation</li>
-          <li>Redesigned the <strong>steering system</strong> of the Falcon E2 with improved Ackermann geometry and reduced bump steer</li>
+          <!-- <li>Redesigned the <strong>steering system</strong> of the Falcon E2 with improved Ackermann geometry and reduced bump steer</li> -->
         </ul>
         <div class="exp-tags">
           <span>SolidWorks</span><span>FEA</span><span>MATLAB</span><span>Simulink</span><span>Fabrication</span>
         </div>
       </div>
 
-      <!-- FYP -->
       <div class="exp-card">
         <div class="exp-card-header">
           <div class="exp-icon"><i class="fas fa-flask"></i></div>
@@ -231,10 +402,10 @@
             <span class="exp-period">2024 – Present · University of Moratuwa</span>
           </div>
         </div>
-        <p>Conducting full hydrodynamic tunnel design, CFD characterisation, and structural feasibility analysis as part of a research-focused final year project.</p>
+        <p>Conducting full hydrodynamic tunnel design, CFD characterisation, and structural feasibility analysis.</p>
         <ul class="exp-list">
           <li>Full tunnel concept design from hydrodynamic first principles</li>
-          <li>CFD flow modelling to characterise test section uniformity and turbulence levels</li>
+          <li>CFD flow modelling to characterise test section uniformity</li>
           <li>Structural design and construction feasibility assessment</li>
         </ul>
         <div class="exp-tags">
@@ -242,7 +413,6 @@
         </div>
       </div>
 
-      <!-- Academic projects -->
       <div class="exp-card">
         <div class="exp-card-header">
           <div class="exp-icon"><i class="fas fa-graduation-cap"></i></div>
@@ -252,7 +422,7 @@
             <span class="exp-period">2021 – Present</span>
           </div>
         </div>
-        <p>Extensive coursework spanning simulation, design, mechatronics, and fluid mechanics — including aerofoil CFD analysis and mechatronics system projects.</p>
+        <p>Extensive coursework spanning simulation, design, mechatronics, and fluid mechanics.</p>
         <ul class="exp-list">
           <li>Aerofoil CFD simulations in ANSYS Fluent — lift and drag validation</li>
           <li>Mechatronics projects with Arduino, Raspberry Pi, and OpenCV</li>
@@ -270,14 +440,14 @@
 <section id="skills" class="section skills-section">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">03 — Skills</span>
+      <span class="section-label">04 — Skills</span>
       <h2 class="section-heading">Technical Expertise</h2>
     </div>
 
     <div class="skills-main-grid">
       <div class="skill-group">
         <div class="skill-group-icon"><i class="fas fa-drafting-compass"></i></div>
-        <h3>CAD &amp; Design</h3>
+        <h3>Design &amp; Manufacturing</h3>
         <div class="skill-bars">
           <div class="skill-row">
             <span>SolidWorks</span>
@@ -364,7 +534,6 @@
       </div>
     </div>
 
-    <!-- Awards & Interests -->
     <div class="awards-interests-grid">
       <div class="ai-block">
         <h3><i class="fas fa-trophy"></i> Awards &amp; Achievements</h3>
@@ -379,7 +548,7 @@
           <li>
             <span class="ai-dot"></span>
             <div>
-              <strong>Rotaract Club — Active Member</strong>
+              <strong>Falcom Team of University of Moratuwa — Steering Enginner</strong>
               <p>Community service and leadership development</p>
             </div>
           </li>
@@ -387,7 +556,7 @@
             <span class="ai-dot"></span>
             <div>
               <strong>School Leadership Roles</strong>
-              <p>Maliyadeva College — Clubs and societies leadership</p>
+              <p>Maliyadeva College — Clubs and societies</p>
             </div>
           </li>
         </ul>
@@ -403,7 +572,7 @@
           <span><i class="fas fa-car"></i> Automotive Systems</span>
           <span><i class="fas fa-wind"></i> Aerodynamics &amp; CFD</span>
           <span><i class="fas fa-chess"></i> Chess &amp; Strategy</span>
-          <span><i class="fas fa-camera"></i> Photography</span>
+          <!-- <span><i class="fas fa-camera"></i> Photography</span> -->
         </div>
       </div>
     </div>
@@ -414,13 +583,17 @@
 <section id="contact" class="section contact-section">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">04 — Contact</span>
+      <span class="section-label">05 — Contact</span>
       <h2 class="section-heading">Get In Touch</h2>
     </div>
 
     <div class="contact-grid">
       <div class="contact-left">
-        <p class="contact-intro">I am actively looking for <strong>graduate engineer positions</strong> in mechanical design, simulation, and product development. Feel free to reach out — I am happy to connect and discuss opportunities.</p>
+        <p class="contact-intro">
+          I am actively looking for <strong>graduate engineer positions</strong> in mechanical design,
+          simulation, and product development. Feel free to reach out — I am happy to connect and
+          discuss opportunities.
+        </p>
 
         <a href="mailto:jithendrapathiraja3434@gmail.com" class="contact-card">
           <div class="cc-icon email-icon"><i class="fas fa-envelope"></i></div>
@@ -448,31 +621,48 @@
           </div>
           <i class="fas fa-arrow-right cc-arrow"></i>
         </a>
+
+        <a href="mailto:jithendrapathiraja3434@gmail.com" class="btn-email-me">
+          <i class="fas fa-paper-plane"></i> Email Me Directly
+        </a>
       </div>
 
       <div class="contact-right">
-        <div class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Your Name</label>
-              <input type="text" id="senderName" placeholder="Your Name" />
-            </div>
-            <div class="form-group">
-              <label>Your Email</label>
-              <input type="email" id="senderEmail" placeholder="your@email.com" />
+        <div class="contact-info-box">
+          <h3><i class="fas fa-id-card" style="color:var(--accent);margin-right:10px;"></i> Contact Information</h3>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ci-text">
+              <strong>Email Address</strong>
+              <span>jithendrapathiraja3434@gmail.com</span>
             </div>
           </div>
-          <div class="form-group">
-            <label>Subject</label>
-            <input type="text" id="msgSubject" placeholder="Subject" />
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="ci-text">
+              <strong>LinkedIn Profile</strong>
+              <span>linkedin.com/in/jithendra-pathiraja-6a77b5287</span>
+            </div>
           </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea id="msgBody" rows="5" placeholder="Your message..."></textarea>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ci-text">
+              <strong>Location</strong>
+              <span>Sri Lanka — Open to relocate</span>
+            </div>
           </div>
-          <button class="btn-send" onclick="sendEmail()">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="ci-text">
+              <strong>Availability</strong>
+              <span>Open to Graduate Engineer roles</span>
+            </div>
+          </div>
+          <div style="margin-top:24px;">
+            <a href="cv/Jithendra_CV.pdf" download class="btn-hero-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-download"></i> Download My CV
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -482,7 +672,7 @@
 <!-- ========== FOOTER ========== -->
 <footer class="footer">
   <div class="footer-inner">
-    <span class="footer-logo">JP</span>
+    <span class="footer-logo">Jithendra <span>Pathiraja</span></span>
     <p>&copy; 2025 Jithendra Pathiraja &middot; Mechanical Engineer</p>
     <div class="footer-socials">
       <a href="mailto:jithendrapathiraja3434@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>

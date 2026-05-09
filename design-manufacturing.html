@@ -6,20 +6,20 @@
   <title>Design &amp; Manufacturing | Jithendra Pathiraja</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="index.html" class="logo">JP</a>
+    <a href="index.html" class="logo">Jithendra <span>Pathiraja</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#hero"       class="nav-link">Home</a></li>
-      <li><a href="index.html#about"      class="nav-link">About</a></li>
-      <li><a href="index.html#experience" class="nav-link">Experience</a></li>
-      <li><a href="index.html#skills"     class="nav-link">Skills</a></li>
-      <li><a href="design-manufacturing.html" class="nav-link active">Projects</a></li>
-      <li><a href="index.html#contact"    class="nav-link">Contact</a></li>
+      <li><a href="index.html#hero"            class="nav-link">Home</a></li>
+      <li><a href="index.html#about"           class="nav-link">About</a></li>
+      <li><a href="index.html#experience"      class="nav-link">Experience</a></li>
+      <li><a href="index.html#skills"          class="nav-link">Skills</a></li>
+      <li><a href="design-manufacturing.html"  class="nav-link active">Projects</a></li>
+      <li><a href="index.html#contact"         class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-actions">
       <button class="theme-toggle" id="themeToggle" title="Toggle theme">
@@ -30,19 +30,18 @@
   </div>
 </nav>
 
-<!-- Project sub-nav -->
-<div style="background:var(--bg2);border-bottom:1px solid var(--border);padding:0 36px;position:sticky;top:64px;z-index:500;">
-  <div style="max-width:1160px;margin:0 auto;display:flex;gap:0;overflow-x:auto;">
-    <a href="design-manufacturing.html"    style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--gold);border-bottom:2px solid var(--gold);white-space:nowrap;"><i class="fa fa-cogs"></i> Design &amp; Manufacturing</a>
-    <a href="fluid-dynamics.html"          style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--text-muted);border-bottom:2px solid transparent;white-space:nowrap;transition:color 0.2s;"><i class="fa fa-water"></i> Fluid Dynamics</a>
-    <a href="mechanical-simulations.html"  style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--text-muted);border-bottom:2px solid transparent;white-space:nowrap;transition:color 0.2s;"><i class="fa fa-chart-line"></i> Mechanical Simulations</a>
-    <a href="academic-projects.html"       style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:0.78rem;font-family:'DM Mono',monospace;letter-spacing:0.05em;color:var(--text-muted);border-bottom:2px solid transparent;white-space:nowrap;transition:color 0.2s;"><i class="fa fa-graduation-cap"></i> Academic Projects</a>
+<div class="proj-subnav">
+  <div class="proj-subnav-inner">
+    <a href="design-manufacturing.html"   class="active"><i class="fa fa-cogs"></i> Design &amp; Manufacturing</a>
+    <a href="fluid-dynamics.html"                       ><i class="fa fa-water"></i> Fluid Dynamics</a>
+    <a href="mechanical-simulations.html"               ><i class="fa fa-chart-line"></i> Mechanical Simulations</a>
+    <a href="academic-projects.html"                    ><i class="fa fa-graduation-cap"></i> Academic Projects</a>
   </div>
 </div>
 
 <div class="page-hero">
   <span class="section-label">Design &amp; Manufacturing</span>
-  <h2 class="section-heading">Design &amp; Manufacturing<br/><em>Projects</em></h2>
+  <h2 class="section-heading">Design &amp; Manufacturing <em>Projects</em></h2>
   <p class="page-hero-sub">SolidWorks, FEA, Fabrication — engineering from concept to physical reality</p>
 </div>
 
@@ -50,7 +49,7 @@
   <div class="container">
 
     <!-- PROJECT 1: Welding Jig -->
-    <div class="project-card">
+    <div class="project-card" id="dm1">
       <div class="project-media">
         <div class="project-slideshow" data-project="dm1">
           <img src="images/projects/dm-p1/1.jpg"  alt="Welding Jig" class="proj-slide active" />
@@ -94,7 +93,7 @@
     </div>
 
     <!-- PROJECT 2: Rear Paddock Stand -->
-    <div class="project-card reverse">
+    <div class="project-card reverse" id="dm2">
       <div class="project-media">
         <div class="project-slideshow" data-project="dm2">
           <img src="images/projects/dm-p2/1.jpg" alt="Paddock Stand" class="proj-slide active" />
@@ -137,11 +136,12 @@
     </div>
 
     <!-- PROJECT 3: Quick Jack -->
-    <div class="project-card">
+    <div class="project-card" id="dm3">
       <div class="project-media">
         <div class="project-slideshow" data-project="dm3">
           <div class="proj-slide-placeholder active">
-            <div><i class="fas fa-image" style="font-size:1.8rem;color:var(--gold);display:block;margin-bottom:10px;"></i><span style="font-size:0.82rem;">Photos Coming Soon</span></div>
+            <i class="fas fa-image" style="font-size:2rem;color:var(--accent);"></i>
+            <span>Photos Coming Soon</span>
           </div>
           <div class="proj-slide-controls">
             <button class="proj-prev"><i class="fas fa-chevron-left"></i></button>
@@ -173,11 +173,12 @@
     </div>
 
     <!-- PROJECT 4: Steering Redesign -->
-    <div class="project-card reverse">
+    <div class="project-card reverse" id="dm4">
       <div class="project-media">
         <div class="project-slideshow" data-project="dm4">
           <div class="proj-slide-placeholder active">
-            <div><i class="fas fa-image" style="font-size:1.8rem;color:var(--gold);display:block;margin-bottom:10px;"></i><span style="font-size:0.82rem;">Photos Coming Soon</span></div>
+            <i class="fas fa-image" style="font-size:2rem;color:var(--accent);"></i>
+            <span>Photos Coming Soon</span>
           </div>
           <div class="proj-slide-controls">
             <button class="proj-prev"><i class="fas fa-chevron-left"></i></button>
@@ -213,7 +214,7 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <span class="footer-logo">JP</span>
+    <span class="footer-logo">Jithendra <span>Pathiraja</span></span>
     <p>&copy; 2025 Jithendra Pathiraja</p>
     <div class="footer-socials">
       <a href="mailto:jithendrapathiraja3434@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
