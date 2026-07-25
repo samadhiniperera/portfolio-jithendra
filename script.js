@@ -321,7 +321,7 @@ document.querySelectorAll('.project-slideshow').forEach(ss => {
     cur = (idx + slides.length) % slides.length;
     slides[cur].classList.add('active');
     allDots[cur] && allDots[cur].classList.add('active');
-    if (slides[cur].tagName === 'VIDEO') slides[cur].play().catch(() => {});
+    if (slides[cur].tagName === 'VIDEO') { slides[cur].muted = true; slides[cur].play().catch(() => {}); }
   }
 
   prev && prev.addEventListener('click', () => goTo(cur - 1));

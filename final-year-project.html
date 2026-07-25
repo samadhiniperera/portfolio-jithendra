@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Year Project | Jithendra Pathiraja</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">Jithendra <span>Pathiraja</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#hero"           class="nav-link">Home</a></li>
+      <li><a href="index.html#about"          class="nav-link">About</a></li>
+      <li><a href="index.html#experience"     class="nav-link">Experience</a></li>
+      <li><a href="index.html#skills"         class="nav-link">Skills</a></li>
+      <li><a href="design-manufacturing.html" class="nav-link active">Projects</a></li>
+      <li><a href="index.html#contact"        class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<div class="proj-subnav">
+  <div class="proj-subnav-inner">
+    <a href="final-year-project.html"    class="fyp-nav active"><i class="fa fa-star"></i> Final Year Project</a>
+    <a href="design-manufacturing.html"                        ><i class="fa fa-cogs"></i> Design &amp; Manufacturing</a>
+    <a href="fluid-dynamics.html"                              ><i class="fa fa-water"></i> Fluid Dynamics</a>
+    <a href="mechanical-simulations.html"                      ><i class="fa fa-chart-line"></i> Mechanical Simulations</a>
+    <a href="academic-projects.html"                           ><i class="fa fa-graduation-cap"></i> Academic Projects</a>
+  </div>
+</div>
+
+<div class="page-hero">
+  <span class="fyp-page-badge"><i class="fas fa-star"></i> Final Year Project</span>
+  <h2 class="section-heading">Hydrodynamic Tunnel <em>Design &amp; Development</em></h2>
+</div>
+
+<section class="projects-section">
+  <div class="container">
+
+    <!-- FINAL YEAR PROJECT: Hydrodynamic Tunnel -->
+    <div class="project-card fyp-card" id="fyp1">
+      <div class="project-media">
+        <div class="project-slideshow" data-project="fyp1">
+          <img src="images/projects/fyp/1.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide active" />
+          <img src="images/projects/fyp/2.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide" />
+          <img src="images/projects/fyp/3.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide" />
+          <img src="images/projects/fyp/4.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide" />
+          <img src="images/projects/fyp/5.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide" />
+          <img src="images/projects/fyp/6.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide" />
+          <img src="images/projects/fyp/7.jpg" alt="Hydrodynamic Tunnel build" class="proj-slide" />
+          <video class="proj-video" muted loop playsinline>
+            <source src="videos/fyp/video.mp4" type="video/mp4" />
+          </video>
+          <div class="proj-slide-controls">
+            <button class="proj-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="proj-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="proj-dots"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Design and Development of a Hydrodynamic Tunnel<br/>for Experimental Fluid Dynamics</h3>
+        <div class="project-tags">
+          <span>Final Year Project</span><span>ANSYS Fluent CFD</span><span>MATLAB</span><span>FEA</span><span>Glass Fibre Fabrication</span>
+        </div>
+        <p>Hydrodynamic tunnels are used across marine engineering, hydrofoil testing, high-Reynolds-number research and CFD model validation — yet Sri Lanka had no purpose-built facility of its own, forcing costly overseas testing and leaving local CFD-validation needs unmet. This project designed, simulated, and physically fabricated a small/medium-scale, vertical, closed-loop hydrodynamic tunnel with an open-channel test section, built to generate steady, uniform, low-turbulence flow for external flow experiments. The core experimental goal was reproducing the full range of flow regimes around a cylindrical body — from laminar steady flow through to transitional unsteady flow — across Reynolds numbers from 0 to roughly 8,000, based on cylinder diameter, inside a 150 × 150 mm test section at a flow rate of 0.0136 m³/s.</p>
+        <p>The design followed a four-phase process: configuration selection grounded in literature review, analytical design and sizing of every component, CFD and FEA optimisation, and finally fabrication and assembly. A MATLAB head-loss model confirmed the full circuit's head loss (~0.9 m) sits comfortably within the available pump head (9.14 m), showing head loss alone couldn't be used to optimise the design — so single-phase ANSYS Fluent CFD was used instead. Transient CFD of the 35° wide-angle diffuser revealed severe flow separation; four guide vanes (7° per channel, following the Waitman–Reneau–Kline method) were introduced and cut turbulence intensity through the diffuser from ~10.7% down to 2.08%, while achieving a pressure recovery coefficient (Cₚ) of 0.593. FEA on the glass-fibre components showed that an unreinforced 3 mm GFRP wall exceeded the 60 MPa allowable stress, so external ribs and additional GFRP layers were added across all structural parts.</p>
+        <p>Every primary component — the vertical transition, 90° bends, the wide-angle diffuser with integrated splitter vanes, the settling chamber, the contraction section, the test section, and the honeycomb flow straightener — was hand-laid in glass-fibre-reinforced plastic (GFRP) on glass moulds for a smooth internal finish, paired with a low-cost 3D-printed PLA honeycomb. The completed tunnel was fully assembled, commissioned, and validated using dye flow visualisation around a test cylinder, making it Sri Lanka's first hydrodynamic tunnel with a consolidated, replicable design framework for future facilities built under similar budget, space, and material constraints.</p>
+        <ul class="project-highlights">
+          <li><i class="fas fa-check-circle"></i> Sri Lanka's first purpose-built hydrodynamic tunnel — designed, fabricated, and commissioned end-to-end</li>
+          <li><i class="fas fa-check-circle"></i> Vertical closed-loop circuit, open-channel test section, targeting Re 0–8,000 around a cylinder</li>
+          <li><i class="fas fa-check-circle"></i> MATLAB head-loss model verified pump adequacy — ~0.9 m loss vs 9.14 m available head</li>
+          <li><i class="fas fa-check-circle"></i> ANSYS Fluent CFD — 4-vane splitter design cut diffuser turbulence intensity from ~10.7% to 2.08% (Cₚ = 0.593)</li>
+          <li><i class="fas fa-check-circle"></i> FEA-driven redesign of GFRP wall thickness, ribs, and reinforcement across all structural components</li>
+          <li><i class="fas fa-check-circle"></i> Full glass-fibre fabrication by hand layup, plus a 3D-printed PLA honeycomb flow straightener</li>
+          <li><i class="fas fa-check-circle"></i> Commissioned and validated with dye flow visualisation around a test cylinder</li>
+        </ul>
+        <div class="project-buttons">
+          <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/" target="_blank" class="btn-proj-primary">
+            <i class="fab fa-linkedin"></i> View on LinkedIn
+          </a>
+          <a href="reports/hydrodynamic-tunnel-report.pdf" target="_blank" class="btn-proj-outline">
+            <i class="fas fa-file-pdf"></i> Full Project Report
+          </a>
+        </div>
+
+        <!-- ── Project Poster ── -->
+        <div class="fyp-poster-section">
+          <h4 class="fyp-poster-heading"><i class="fas fa-image"></i> Project Poster</h4>
+          <a href="reports/hydrodynamic-tunnel-poster.pdf" target="_blank" class="fyp-poster-frame">
+            <img src="images/projects/fyp/poster.png" alt="Hydrodynamic Tunnel project poster" />
+          </a>
+          <p class="fyp-poster-caption">Click the poster to open the full-resolution PDF</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-logo">Jithendra <span>Pathiraja</span></span>
+    <p>&copy; 2025 Jithendra Pathiraja</p>
+    <div class="footer-socials">
+      <a href="mailto:jithendrapathiraja3434@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/jithendra-pathiraja-6a77b5287/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

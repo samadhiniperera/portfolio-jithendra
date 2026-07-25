@@ -512,6 +512,9 @@ ul { list-style: none; }
 .proj-subnav a { display: inline-flex; align-items: center; gap: 7px; padding: 14px 20px; font-size: 0.78rem; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 2px solid transparent; white-space: nowrap; transition: color 0.2s; }
 .proj-subnav a:hover { color: var(--accent); }
 .proj-subnav a.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.proj-subnav a.fyp-nav { color: #e0a730; font-weight: 700; }
+.proj-subnav a.fyp-nav:hover { color: #f4c150; }
+.proj-subnav a.fyp-nav.active { color: #e0a730; border-bottom-color: #e0a730; }
 
 .projects-section { padding: 0 0 100px; }
 .projects-section .container { max-width: 1160px; margin: 0 auto; padding: 0 36px; }
@@ -607,4 +610,76 @@ ul { list-style: none; }
 @media (max-width: 480px) {
   .hero-name { font-size: 2.4rem; }
   .hero-photo-wrap { width: 180px; height: 210px; }
+}
+/* =============================================
+   FINAL YEAR PROJECT — FLAGSHIP HIGHLIGHT
+   ============================================= */
+.fyp-showcase {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center;
+  background: linear-gradient(135deg, var(--card2), var(--card));
+  border: 2px solid #e0a730; border-radius: 20px; padding: 36px;
+  margin-bottom: 56px; position: relative; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(224, 167, 48, 0.18);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.fyp-showcase:hover { transform: translateY(-4px); box-shadow: 0 30px 75px rgba(224, 167, 48, 0.28); }
+.fyp-showcase::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: 20px;
+  background: radial-gradient(circle at 85% 15%, rgba(224,167,48,0.14), transparent 55%);
+}
+.fyp-ribbon {
+  position: absolute; top: 18px; left: 18px; z-index: 5;
+  background: linear-gradient(135deg, #f4c150, #e0a730); color: #241800;
+  font-weight: 700; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 7px 15px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px;
+  box-shadow: 0 8px 20px rgba(224, 167, 48, 0.45);
+}
+.fyp-media-wrap { position: relative; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+.fyp-media-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 16/10; }
+.fyp-body .proj-card-tag { color: #e0a730; }
+.fyp-body h3 { font-family: 'Raleway', sans-serif; font-size: 1.55rem; font-weight: 800; color: var(--text); margin: 10px 0 14px; line-height: 1.3; }
+.fyp-body p { font-size: 0.92rem; color: var(--text-light); line-height: 1.8; margin-bottom: 20px; }
+.btn-fyp-explore {
+  display: inline-flex; align-items: center; gap: 9px; padding: 14px 28px;
+  background: linear-gradient(135deg, #f4c150, #e0a730); color: #241800;
+  border-radius: 9px; font-weight: 700; font-size: 0.88rem; transition: all 0.25s;
+  box-shadow: 0 10px 26px rgba(224, 167, 48, 0.35);
+}
+.btn-fyp-explore:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(224, 167, 48, 0.5); }
+
+.proj-category-title.fyp-title { color: #e0a730; margin-top: 0; }
+.proj-category-title.fyp-title i { color: #e0a730; }
+
+/* Final year project page hero + emphasis */
+.fyp-page-badge {
+  display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg,#f4c150,#e0a730);
+  color: #241800; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 8px 18px; border-radius: 20px; margin-bottom: 16px; box-shadow: 0 8px 22px rgba(224,167,48,0.35);
+}
+.project-card.fyp-card {
+  border: 2px solid #e0a730; border-radius: 18px; padding: 44px; box-shadow: 0 24px 60px rgba(224, 167, 48, 0.15); margin-bottom: 60px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.fyp-card .project-media { width: 100%; max-width: 920px; margin: 0 auto; }
+.fyp-card .project-slideshow { aspect-ratio: 16 / 9; }
+.fyp-card .project-info { width: 100%; max-width: 780px; margin: 40px auto 0; }
+.fyp-card .project-info h3 { text-align: center; }
+.fyp-card .project-tags { justify-content: center; }
+.fyp-card .project-buttons { justify-content: center; }
+.fyp-card .fyp-poster-section { width: 100%; text-align: center; }
+.fyp-card .fyp-poster-heading { justify-content: center; }
+.fyp-poster-section { margin-top: 48px; padding-top: 44px; border-top: 1px solid var(--border); }
+.fyp-poster-heading { display: flex; align-items: center; gap: 10px; font-family: 'Raleway', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 20px; }
+.fyp-poster-heading i { color: #e0a730; }
+.fyp-poster-frame { display: block; max-width: 620px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); transition: transform 0.3s, box-shadow 0.3s; }
+.fyp-poster-frame:hover { transform: scale(1.015); box-shadow: 0 26px 60px rgba(0,0,0,0.3); }
+.fyp-poster-frame img { width: 100%; display: block; }
+.fyp-poster-caption { text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 14px; }
+
+@media (max-width: 640px) {
+  .project-card.fyp-card { padding: 26px; }
+}
+
+@media (max-width: 900px) {
+  .fyp-showcase { grid-template-columns: 1fr; padding: 26px; }
 }
